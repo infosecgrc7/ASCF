@@ -26,6 +26,8 @@ Original SCF English control descriptions and assessment objectives (AOs) anchor
 
 ## Mapping and scoring rules
 
+[Persian STRM methodology and worked examples using real SCF controls/AOs](docs/STRM.fa.md)
+
 - **Authority:** original requirements and a pinned SCF edition with source metadata/hashes. Translations or prior mappings cannot replace source evidence. Each document has a distinct source_id.
 - **Unit:** an independently testable obligation retaining actor, action, scope, timing and inherited qualifiers. Separate duties that can pass or fail independently.
 - **Candidates:** inspect control descriptions, their associated AOs and alternatives. BM25 rank and SCF weighting are not relationship strength.

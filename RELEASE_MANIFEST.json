@@ -37,12 +37,12 @@
       "sha256": "9f775f77c29f3cba5f225f98c23fa910dcdfbaa9769ccfadb82145b2662f9607"
     },
     "README.fa.md": {
-      "bytes": 9880,
-      "sha256": "213866fba5e27c618ceaeb139f4de9a0f7cfb05a50f3ab0b68842451e286dd1e"
+      "bytes": 10009,
+      "sha256": "fb6cb1ec64e3dcdd43b6118ee2b8703cf5d9c5506ba72a431fc48a7c99342bce"
     },
     "README.md": {
-      "bytes": 8630,
-      "sha256": "a12a4027de0a738654d0b56c5b65e0813f3643d5acb1912571160e5548b37d3e"
+      "bytes": 8723,
+      "sha256": "8ddc3dedd837533e031ad96b1ebc061488f895044d45302b5b9f68fe986064a8"
     },
     "SECURITY.md": {
       "bytes": 859,
@@ -76,9 +76,13 @@
       "bytes": 3254,
       "sha256": "c6efd80639988920459ae07d1fb5b85aca8fcb8b246501a6fa22dac1a2479fcb"
     },
+    "docs/STRM.fa.md": {
+      "bytes": 19881,
+      "sha256": "8952a7d70798aa15627cc2c909af66e366d03a0657775252859007e89f5c9def"
+    },
     "docs/USAGE.fa.md": {
-      "bytes": 9452,
-      "sha256": "20c3f885d270bfa4aa70adef0d4f9cd0f7238c0a4bf48f18b723f68a04d9dfd3"
+      "bytes": 9511,
+      "sha256": "030c675137443a24fb0d9ce501dee10e663f957c42ec8153caf9742d35684b15"
     },
     "docs/USAGE.md": {
       "bytes": 6714,
