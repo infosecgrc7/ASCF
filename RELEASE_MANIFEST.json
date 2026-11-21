@@ -37,12 +37,12 @@
       "sha256": "9f775f77c29f3cba5f225f98c23fa910dcdfbaa9769ccfadb82145b2662f9607"
     },
     "README.fa.md": {
-      "bytes": 5058,
-      "sha256": "420da705340d2ea8cf60d6c51f1e5268c950c79505c800e92fa5e1bb2cbd178f"
+      "bytes": 5136,
+      "sha256": "51101879498d97a65d0a7334d0907935378cf457fe5957523c0b5614e0e608bb"
     },
     "README.md": {
-      "bytes": 5267,
-      "sha256": "631d8b51ba72f458aa89764d4506d515d84b65c35ea24d403212188bdf481ced"
+      "bytes": 5345,
+      "sha256": "94f040200921d69314c8eeb12d70d52e2658815c1155c6c320860415c32421d6"
     },
     "SECURITY.md": {
       "bytes": 859,
@@ -71,6 +71,10 @@
     "docs/USAGE.md": {
       "bytes": 6651,
       "sha256": "fc7a7cd72685b8b918e4a10aabf2f7d37501eb99a0a7a6e68469f7135fea6a9a"
+    },
+    "docs/assets/ascf-methodology.png": {
+      "bytes": 1691884,
+      "sha256": "be6f0efa64776df9e8ee1c44dc06b6535fc619ed5c30d07fab19292a5af55cec"
     },
     "examples/synthetic/catalog.json": {
       "bytes": 1372,
@@ -117,8 +121,8 @@
       "sha256": "7e465dce18eabac3748eb3e6adbaf08619030a9a7248eecba4419e19c11e4aaf"
     },
     "scripts/audit_release.py": {
-      "bytes": 6315,
-      "sha256": "f311d7259b9294aadab246d0a742e32bb0976df433c54592ecf00f28cb2f748c"
+      "bytes": 6637,
+      "sha256": "da5c1282b9c028408d01f5933db7a745be2da607e9ad40058d11fed2625431b1"
     },
     "scripts/build_release.py": {
       "bytes": 2691,

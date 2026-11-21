@@ -37,7 +37,7 @@ def public_files(root=ROOT):
                     continue
                 if 'source_archive' in file.parts or 'local-data' in file.parts:
                     raise ValueError('Private reference directory inside public tree')
-                if file.suffix not in ALLOWED_SUFFIXES:
+                if file.suffix not in ALLOWED_SUFFIXES and file.relative_to(root).as_posix() != 'docs/assets/ascf-methodology.png':
                     raise ValueError('Unclassified public file: ' + file.relative_to(root).as_posix())
                 result.append(file)
         else:
@@ -60,6 +60,10 @@ def audit(root=ROOT, verify_manifest=True):
                   re.compile(r'\bsk-[A-Za-z0-9_-]{25,}')]
     links_checked = 0
     for file in files:
+        if file.relative_to(root).as_posix() == 'docs/assets/ascf-methodology.png':
+            if not file.read_bytes().startswith(b'\x89PNG\r\n\x1a\n'):
+                raise ValueError('Invalid brand image PNG signature')
+            continue
         body = file.read_text(encoding='utf-8')
         for pattern in prohibited:
             if pattern.search(body):

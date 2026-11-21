@@ -1,3 +1,5 @@
+![ASCF — Ashna Secure Control Framework](docs/assets/ascf-methodology.png)
+
 # SCF Mapping & Persian Translation Toolkit
 
 [راهنمای فارسی](README.fa.md)

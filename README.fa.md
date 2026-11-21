@@ -1,3 +1,5 @@
+![ASCF — Ashna Secure Control Framework](docs/assets/ascf-methodology.png)
+
 # ابزار یکپارچهٔ نگاشت SCF و ترجمهٔ فارسی
 
 [English guide](README.md)
