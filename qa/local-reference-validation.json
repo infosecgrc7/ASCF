@@ -1,0 +1,15 @@
+{
+  "status": "LOCAL_REFERENCE_CHECKS_PASSED",
+  "controls_compared": 1534,
+  "ao_texts_compared": 5956,
+  "all_control_and_ao_texts_identical": true,
+  "source_ao_association_notes": 8,
+  "afta_primary_records_checked": 620,
+  "afta_alias_lookups_checked": 205,
+  "supplementary_records_checked": 759,
+  "held_records_excluded": 43,
+  "cross_authority_headings_checked": 24,
+  "baseline_jsonl_sha256": "7ae2e1dc21c0f970c5f57be33079f6236712541c90dc4af049142462b2e84384",
+  "source_workbook_sha256": "92eeb0320e93f3d3ab6eda6581b5f1f3dcd038f74d9effc623b485fb4d69bf75",
+  "limits": "No new visual PDF transcription review or real mapping semantic certification."
+}

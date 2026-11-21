@@ -1,0 +1,22 @@
+# Private local inputs and generated outputs
+local-data/
+private/
+source_archive/
+*.xlsx
+*.xlsm
+*.pdf
+*.zip
+*.whl
+*.egg-info/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scf-mapping-toolkit"
+version = "1.0.0"
+description = "Versioned, AO-aware regulatory mapping and Persian translation workflow tools"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "All rights reserved; no open-source license granted"}
+dependencies = ["openpyxl>=3.1.5,<4"]
+
+[project.scripts]
+scf-toolkit = "scf_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["skills/scf-mapping-translation/scripts"]
+include = ["scf_toolkit*"]

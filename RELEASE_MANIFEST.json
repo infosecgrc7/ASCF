@@ -1,0 +1,196 @@
+{
+  "version": "1.0.0",
+  "release_date": "2026-11-21",
+  "hash_algorithm": "SHA-256",
+  "note": "Hashes cover every public payload file except this manifest itself.",
+  "files": {
+    ".editorconfig": {
+      "bytes": 152,
+      "sha256": "85e304f369ea94faffb34e132424c1c3986bd25b02423741f365bff88b55ae01"
+    },
+    ".gitattributes": {
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    ".github/workflows/ci.yml": {
+      "bytes": 1179,
+      "sha256": "644400d52e859c00bafe20432be715fbee6f2764ed489694ce30b0b058ce1a7c"
+    },
+    ".gitignore": {
+      "bytes": 236,
+      "sha256": "864ab74d2ebb39bd1bd85412124992211abf7430446a8f5e70170f2fa2a40b9e"
+    },
+    "AGENTS.md": {
+      "bytes": 724,
+      "sha256": "a486f0329627e7b9c1a5fe232fcfaacfe2b5c094d1bed83562f0f22545c78eac"
+    },
+    "CHANGELOG.md": {
+      "bytes": 969,
+      "sha256": "f1f66ef0f86dab379f7941d11382f0b7068a9df9f4c29b96e255d43d90d4589c"
+    },
+    "CONTRIBUTING.md": {
+      "bytes": 961,
+      "sha256": "caba64408533aed43ec6ca3a5481b3b233bf357dcad50abb2a4da1868fcea8bf"
+    },
+    "LICENSE": {
+      "bytes": 672,
+      "sha256": "9f775f77c29f3cba5f225f98c23fa910dcdfbaa9769ccfadb82145b2662f9607"
+    },
+    "README.fa.md": {
+      "bytes": 5058,
+      "sha256": "420da705340d2ea8cf60d6c51f1e5268c950c79505c800e92fa5e1bb2cbd178f"
+    },
+    "README.md": {
+      "bytes": 5267,
+      "sha256": "631d8b51ba72f458aa89764d4506d515d84b65c35ea24d403212188bdf481ced"
+    },
+    "SECURITY.md": {
+      "bytes": 859,
+      "sha256": "cff9ffdb9200664a15813726a4489a7f73befe64a32a77e850a33493e6f5e4f2"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 2844,
+      "sha256": "f3c069e81c899ea148cf21471ecf3d9cd8fc153ecc3e992a2593119cbc1d7056"
+    },
+    "docs/MIGRATION.md": {
+      "bytes": 2693,
+      "sha256": "d5fa7ce6d324024c6e93d664339112260a5f9e3dca6cf7f7151335122b29b982"
+    },
+    "docs/PUBLISHING.md": {
+      "bytes": 3258,
+      "sha256": "9214cb036f7cc1227fef4553aa70dc71798290f1b996c681c67124fb5153a635"
+    },
+    "docs/QA.md": {
+      "bytes": 4803,
+      "sha256": "86f836b16b306bbfa66251ffd1df04edd4b2c53c4bafb145d6cc473b84a8c1d1"
+    },
+    "docs/SETUP.md": {
+      "bytes": 3254,
+      "sha256": "c6efd80639988920459ae07d1fb5b85aca8fcb8b246501a6fa22dac1a2479fcb"
+    },
+    "docs/USAGE.md": {
+      "bytes": 6651,
+      "sha256": "fc7a7cd72685b8b918e4a10aabf2f7d37501eb99a0a7a6e68469f7135fea6a9a"
+    },
+    "examples/synthetic/catalog.json": {
+      "bytes": 1372,
+      "sha256": "c3888ef7cf0303a5109a539ebda4b3bf6280d9a6c36d818dbdddc9d19844d053"
+    },
+    "examples/synthetic/inventory.json": {
+      "bytes": 666,
+      "sha256": "d28d55d9dcaf8141e3a325da6d51cec29d726380cfc41ce8d69b4bc7a56930dc"
+    },
+    "examples/synthetic/ledger.json": {
+      "bytes": 7290,
+      "sha256": "ae8c0adeddd0b288ea92e8c1a1e9ea5fbd3b128d047f4226832b1eeec248d39d"
+    },
+    "examples/synthetic/source.txt": {
+      "bytes": 135,
+      "sha256": "5f4ac77422455a4c19da53dc680a719322e720e4ec16a6c54337b3c32f4aba52"
+    },
+    "examples/synthetic/translations.jsonl": {
+      "bytes": 447,
+      "sha256": "c1ac6df5fbfd37b2e8d82bd43b24edcb4bb150c06b2e101ad41c718d7de5dbe6"
+    },
+    "pyproject.toml": {
+      "bytes": 563,
+      "sha256": "df949eaad3faed34592b17acf8152fc924f5497ee5f2345583fcdad7cec1f0eb"
+    },
+    "qa/independent-review.json": {
+      "bytes": 819,
+      "sha256": "8c919b3cec19ef8df5b10bbd2e77e3b40a82c85da4623aebaaa787064243fdea"
+    },
+    "qa/local-reference-validation.json": {
+      "bytes": 662,
+      "sha256": "10899b187a569e238e13fd0949964a422b3ec1e870c2f5c0286b811a949e037d"
+    },
+    "qa/release-validation.json": {
+      "bytes": 2274,
+      "sha256": "e5284d59cfefa7a02e8204ccd10c5366a3936eec27fc5d7ca5d38325798fcae6"
+    },
+    "qa/unit-tests.txt": {
+      "bytes": 5314,
+      "sha256": "2ad3ca9dc1fe44aec64cfd6b9caf9a979bb6dfb3a2a7c71e0982e82dfac79919"
+    },
+    "requirements.txt": {
+      "bytes": 34,
+      "sha256": "7e465dce18eabac3748eb3e6adbaf08619030a9a7248eecba4419e19c11e4aaf"
+    },
+    "scripts/audit_release.py": {
+      "bytes": 6315,
+      "sha256": "f311d7259b9294aadab246d0a742e32bb0976df433c54592ecf00f28cb2f748c"
+    },
+    "scripts/build_release.py": {
+      "bytes": 2691,
+      "sha256": "1ab28106529922140a868f7de25bf817efaa8c7c3a79b2331116890a67ca35c5"
+    },
+    "scripts/create_demo.py": {
+      "bytes": 6462,
+      "sha256": "23d8456611d88e59fbcc142c33b2c11fb1ed9f33fd30a457f14a4971529b64d9"
+    },
+    "scripts/verify_local_data.py": {
+      "bytes": 4364,
+      "sha256": "7035fc3a2f98b5a3e88605d853c819793fcb3e3bc8b42efaa0b46661927d0795"
+    },
+    "skills/scf-mapping-translation/SKILL.md": {
+      "bytes": 6713,
+      "sha256": "2f831fa63ae2a17bb89ae54c2d5aefea2a342f6e04425fd268fca8e456df7167"
+    },
+    "skills/scf-mapping-translation/references/data-contract.md": {
+      "bytes": 4371,
+      "sha256": "a1f83142cd198ee9f54c151d2af3e87fac8e50ac1b9363b168abff03d4ddc68b"
+    },
+    "skills/scf-mapping-translation/references/setup.md": {
+      "bytes": 2900,
+      "sha256": "10574ed370765992a28b066d2e523b09e29c5a08b7e1ba1b0b858df454816333"
+    },
+    "skills/scf-mapping-translation/references/workflow.md": {
+      "bytes": 4460,
+      "sha256": "e6644f02d8d4b12a200772cdd49f8b7dc7b1b63ba2202a9032ee9fab76af607a"
+    },
+    "skills/scf-mapping-translation/scripts/run.py": {
+      "bytes": 113,
+      "sha256": "6ee76e6b64f390d93b25c57923c290a20af038ec4e99b962d8b749689f8749c7"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/__init__.py": {
+      "bytes": 71,
+      "sha256": "716f47f38a9c862a14ac2958d4e346d6cee98808b652bd6c83bfe6daee34a5c9"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/catalog.py": {
+      "bytes": 7460,
+      "sha256": "9484c34d53c647ac8474c6bdab8329f105cf254b49968c73e3848a709d9878e7"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/cli.py": {
+      "bytes": 4964,
+      "sha256": "81dff13c788953f8d0d9bb6e59010621e89d2b1dd7fa5f59f844cf6158822fc6"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/common.py": {
+      "bytes": 1939,
+      "sha256": "b64f1b6dc937e9203190cd355aacd4416883f13f7002ec7ad8a86ec5eb3d1ae0"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/ledger.py": {
+      "bytes": 18703,
+      "sha256": "ba9fcfecb1494082915a7965214fdf3be2e55193701eb3c8f11a6f7d6d746b78"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/retrieval.py": {
+      "bytes": 3311,
+      "sha256": "fb947eeff5023774ac9aa3c75bb937cba4d4cd63d19b1c26512d624c9073a2e9"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/terms.py": {
+      "bytes": 9162,
+      "sha256": "8e858b111374c80b844663c7f8303606afe6cff2d8c5ead948aaa36da26160fc"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/translation.py": {
+      "bytes": 4794,
+      "sha256": "7bf340bfebcbd32c55e086ed9a5e5744e3130dd6d5468ab9bfea8bf02b327fc0"
+    },
+    "skills/scf-mapping-translation/scripts/scf_toolkit/workbook.py": {
+      "bytes": 8472,
+      "sha256": "45179edf5ab5cff06dd2c9adb3152c6147783071a58f174c89bb06c73a897322"
+    },
+    "tests/test_toolkit.py": {
+      "bytes": 25605,
+      "sha256": "6ab5130092dc982cb064523c1805d1af686ba6a2ebdaef574df07a219ed9500c"
+    }
+  }
+}

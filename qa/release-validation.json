@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "date": "2026-11-21",
+  "platform": {
+    "os": "Windows",
+    "python": "3.11",
+    "openpyxl": "3.1.5"
+  },
+  "unit_tests": {
+    "count": 50,
+    "passed": 50,
+    "failed": 0,
+    "log": "qa/unit-tests.txt"
+  },
+  "skill_frontmatter": {
+    "pass": true,
+    "validator": "Bundled skill-creator quick_validate.py"
+  },
+  "python_source_parse": {
+    "files": 15,
+    "pass": true
+  },
+  "local_reference_validation": {
+    "report": "qa/local-reference-validation.json",
+    "controls": 1534,
+    "assessment_objectives": 5956,
+    "afta_records": 620,
+    "afta_aliases": 205,
+    "supplementary_eligible": 759,
+    "held_excluded": 43,
+    "cross_authority_overlaps": 24,
+    "source_association_notes": 8
+  },
+  "independent_forward_review": {
+    "pass": true,
+    "report": "qa/independent-review.json",
+    "reported_defect_fixed_and_rechecked": true
+  },
+  "package_installation": {
+    "wheel_built": true,
+    "isolated_target_installation": true,
+    "installed_cli_exercised": true
+  },
+  "saved_workbook": {
+    "single_sheet": true,
+    "ten_columns": true,
+    "every_value_reconciled": true,
+    "literal_formula_like_text": true,
+    "hidden_rows_columns_blocked": true,
+    "conditional_formatting_blocked": true,
+    "canonical_number_formats_checked": true
+  },
+  "visual_preview": {
+    "generated_and_inspected": true,
+    "native_excel_visual_check": false,
+    "note": "Bundled renderer generated a PNG and imported-cell inspection but its process exited abnormally afterwards; native Excel/RTL print fidelity is not certified."
+  },
+  "remote_ci": {
+    "configured": [
+      "Windows Python 3.11",
+      "Windows Python 3.13",
+      "Ubuntu Python 3.11",
+      "Ubuntu Python 3.13"
+    ],
+    "executed": false
+  },
+  "public_distribution": {
+    "full_third_party_reference_data": false,
+    "code_license": "All rights reserved"
+  },
+  "limits": [
+    "No new visual review of source PDFs",
+    "No semantic mapping accuracy percentage claimed",
+    "Review attestations not cryptographically authenticated",
+    "No automatic LLM translation, OCR, inverse/transitive mapping or legacy-ID migration",
+    "Default mapping export retains original SCF English; bilingual translations are separate reviewed units"
+  ]
+}

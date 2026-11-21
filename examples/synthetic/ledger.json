@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "metadata": {
+    "scf_version": "2026.2",
+    "catalog_sha256": "c3888ef7cf0303a5109a539ebda4b3bf6280d9a6c36d818dbdddc9d19844d053",
+    "inventory_sha256": "d28d55d9dcaf8141e3a325da6d51cec29d726380cfc41ce8d69b4bc7a56930dc",
+    "profile": {
+      "equality_label": "Equal",
+      "rationale": "Functional",
+      "methodology_url": "https://securecontrolsframework.com/start-here/set-theory-relationship-mapping-strm",
+      "note": "Project spelling pinned explicitly; synthetic example only."
+    }
+  },
+  "obligations": [
+    {
+      "id": "DEMO::1::O01",
+      "source_id": "DEMO",
+      "fde_id": "1",
+      "text_exact": "رویدادهای امنیتی را ثبت کند",
+      "source_fragments": [
+        "رویدادهای امنیتی را ثبت کند"
+      ],
+      "description_mode": "verbatim_excerpt",
+      "source_pages": [
+        1
+      ],
+      "testable_outcome": "رویدادهای امنیتی را ثبت کند",
+      "independent_pass_fail_test": "One action can pass while the other fails.",
+      "applicable_parent_context": "سازمان باید:",
+      "five_tuple": {
+        "actor": "سازمان",
+        "action": "رویدادهای امنیتی را ثبت کند",
+        "target_scope": "رویدادهای امنیتی",
+        "frequency_trigger": "",
+        "jurisdiction_qualifier": ""
+      },
+      "source_review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      }
+    },
+    {
+      "id": "DEMO::1::O02",
+      "source_id": "DEMO",
+      "fde_id": "1",
+      "text_exact": "سوابق را برای ۹۰ روز نگهداری کند.",
+      "source_fragments": [
+        "سوابق را برای ۹۰ روز نگهداری کند."
+      ],
+      "description_mode": "verbatim_excerpt",
+      "source_pages": [
+        1
+      ],
+      "testable_outcome": "سوابق را برای ۹۰ روز نگهداری کند.",
+      "independent_pass_fail_test": "One action can pass while the other fails.",
+      "applicable_parent_context": "سازمان باید:",
+      "five_tuple": {
+        "actor": "سازمان",
+        "action": "سوابق را برای ۹۰ روز نگهداری کند.",
+        "target_scope": "رویدادهای امنیتی",
+        "frequency_trigger": "",
+        "jurisdiction_qualifier": ""
+      },
+      "source_review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "obligation_id": "DEMO::1::O01",
+      "scf_id": "TST-01",
+      "relationship": "Subset Of",
+      "rationale": "Functional",
+      "score": 7,
+      "shared_mandatory_clause": "Record security events",
+      "fde_only_clauses": "",
+      "scf_only_clauses": "Protect event record integrity",
+      "decision_reason": "Synthetic containment example.",
+      "falsification_check": {
+        "counterexample_found": false,
+        "reason": "Synthetic exercise compares recording outcomes."
+      },
+      "semantic_review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      },
+      "score_review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      },
+      "selection_review": {
+        "scope": "domain_specific",
+        "decision": "Synthetic recording control is the direct match.",
+        "selected_evidence": [
+          {
+            "ao_id": "TST-01_A01",
+            "quote": "security events are recorded."
+          }
+        ],
+        "alternatives": [
+          {
+            "scf_id": "TST-02",
+            "reason": "Analysis of events differs from generating event records."
+          }
+        ]
+      }
+    }
+  ],
+  "pending": [],
+  "search_reviews": [
+    {
+      "obligation_id": "DEMO::1::O01",
+      "query": "ثبت رویدادهای امنیتی",
+      "search_scope": "All three synthetic controls and all their AOs; not a real SCF search.",
+      "candidates": [
+        {
+          "scf_id": "TST-01",
+          "disposition": "ACCEPTED",
+          "score": 7,
+          "reason": "Synthetic fixture decision; source concepts reviewed separately."
+        },
+        {
+          "scf_id": "TST-02",
+          "disposition": "REJECTED",
+          "reason": "Synthetic fixture decision; source concepts reviewed separately."
+        },
+        {
+          "scf_id": "TST-03",
+          "disposition": "REJECTED",
+          "reason": "Synthetic fixture decision; source concepts reviewed separately."
+        }
+      ],
+      "review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      }
+    },
+    {
+      "obligation_id": "DEMO::1::O02",
+      "query": "نگهداری ۹۰ روزهٔ سوابق",
+      "search_scope": "All three synthetic controls and all their AOs; not a real SCF search.",
+      "candidates": [
+        {
+          "scf_id": "TST-01",
+          "disposition": "REJECTED",
+          "reason": "Synthetic fixture decision; source concepts reviewed separately."
+        },
+        {
+          "scf_id": "TST-02",
+          "disposition": "REJECTED",
+          "reason": "Synthetic fixture decision; source concepts reviewed separately."
+        },
+        {
+          "scf_id": "TST-03",
+          "disposition": "REJECTED",
+          "reason": "Synthetic fixture decision; source concepts reviewed separately."
+        }
+      ],
+      "review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      }
+    }
+  ],
+  "no_matches": [
+    {
+      "obligation_id": "DEMO::1::O02",
+      "reason": "No synthetic control imposes 90-day retention.",
+      "review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      }
+    }
+  ],
+  "coverage_reviews": [
+    {
+      "obligation_id": "DEMO::1::O01",
+      "covered_by": [
+        "TST-01"
+      ],
+      "residual_clauses": [],
+      "reason": "Recording outcome covered in this synthetic example.",
+      "review": {
+        "status": "APPROVED",
+        "method": "model",
+        "reviewer": "synthetic-test-fixture",
+        "reviewed_at": "2026-11-20T12:00:00Z",
+        "notes": "Synthetic example only; not an actual semantic approval."
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "scf_version": "2026.2",
+  "source": {
+    "synthetic": true,
+    "filename": "synthetic-fixture",
+    "sha256": "b3cc0475bb78a5026098858e9889acf666d31062d513d303314eca31d36e72f2"
+  },
+  "controls": [
+    {
+      "id": "TST-01",
+      "title": "Synthetic Event Recording and Protection",
+      "description": "Record security events and protect their integrity.",
+      "metadata": {
+        "pptdf": "Technology"
+      },
+      "assessment_objectives": [
+        {
+          "id": "TST-01_A01",
+          "text": "security events are recorded."
+        },
+        {
+          "id": "TST-01_A02",
+          "text": "event record integrity is protected."
+        }
+      ]
+    },
+    {
+      "id": "TST-02",
+      "title": "Synthetic Monitoring",
+      "description": "Analyze recorded security events.",
+      "metadata": {
+        "pptdf": "Process"
+      },
+      "assessment_objectives": [
+        {
+          "id": "TST-02_A01",
+          "text": "recorded events are analyzed."
+        }
+      ]
+    },
+    {
+      "id": "TST-03",
+      "title": "Synthetic Physical Access",
+      "description": "Restrict physical entry.",
+      "metadata": {
+        "pptdf": "Facilities"
+      },
+      "assessment_objectives": [
+        {
+          "id": "TST-03_A01",
+          "text": "physical entry is restricted."
+        }
+      ]
+    }
+  ]
+}
