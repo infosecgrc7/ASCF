@@ -4,7 +4,7 @@ This is a new integrated 1.0.0 package, not a renaming of every earlier skill ve
 
 | Earlier material | Retained or improved | Deliberately changed |
 | --- | --- | --- |
-| Mapping v7 | Independent obligations, source/child identities, 5–10 preference, 1–4 fallback, no-match accounting and one ten-column sheet | Canonical rows replace partially checked output_rows; source text and selected AO evidence are checked; the saved Excel is reopened and reconciled |
+| Mapping v7 | Independent obligations, source/child identities, no-match accounting and one ten-column sheet | Replaces legacy 1–4 fallback with strict 5–10 inclusive acceptance; canonical rows, exact source/AO evidence and saved-workbook reconciliation |
 | Gold v3 local design | Local workbook extraction, AO-aware Unicode search, explicit qualifiers, counterexample review and residual-gap reasoning | No automatic latest-version switching; no silent rationale rewriting; no multi-sheet final output; no claim that recorded union reviews automatically prove coverage |
 | Translation v2 | AFTA-first authority, strict 759/43 supplementary filter, source/page/evidence provenance and heuristic QA | Private reference import replaces bundling full books into the public ZIP; runtime schema and CLI are unified |
 
@@ -14,7 +14,7 @@ Do not copy approval flags as proof of fresh review. Create the new inventory an
 
 Mapping-v7 output_rows are not directly schema-compatible. The new representation derives all ten columns from mappings and the catalog. Its optional output_rows must exactly equal that canonical sequence. Arbitrary title, description, relationship, rationale or score edits are blocked.
 
-Gold's 5–10-only filter and multi-sheet output are not the current project rules. New output uses the v7 fallback/no-match protocol and single-sheet layout. Equality spelling and rationale are explicit profile values: they are not silently converted during export.
+Current acceptance is 5–10 inclusive, with no 1–4 fallback. The single-sheet layout and no-match accounting remain. Equality spelling and rationale are explicit profile values and are not silently converted during export.
 
 The real SCF 2026.2 source used during local preparation contained eight AO-ID-prefix differences. Associations were preserved from the source control column, documented and not guessed from ID spelling. A future edition must be imported and reviewed on its own evidence.
 

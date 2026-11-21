@@ -10,6 +10,7 @@ test_complete_atomic_disposition (test_toolkit.MappingTests.test_complete_atomic
 test_conditional_formatting_and_hidden_number_formats_rejected (test_toolkit.MappingTests.test_conditional_formatting_and_hidden_number_formats_rejected) ... ok
 test_duplicate_mapping (test_toolkit.MappingTests.test_duplicate_mapping) ... ok
 test_fake_source_quote (test_toolkit.MappingTests.test_fake_source_quote) ... ok
+test_five_is_inclusive_and_ten_is_accepted (test_toolkit.MappingTests.test_five_is_inclusive_and_ten_is_accepted) ... ok
 test_foreign_ao_evidence (test_toolkit.MappingTests.test_foreign_ao_evidence) ... ok
 test_fragments_must_be_exact (test_toolkit.MappingTests.test_fragments_must_be_exact) ... ok
 test_hidden_rows_columns_and_unreadable_text_rejected (test_toolkit.MappingTests.test_hidden_rows_columns_and_unreadable_text_rejected) ... ok
@@ -21,11 +22,11 @@ test_missing_parent_context (test_toolkit.MappingTests.test_missing_parent_conte
 test_missing_union_review (test_toolkit.MappingTests.test_missing_union_review) ... ok
 test_multi_source_repeated_parent_id (test_toolkit.MappingTests.test_multi_source_repeated_parent_id) ... ok
 test_nonexistent_ao_quote (test_toolkit.MappingTests.test_nonexistent_ao_quote) ... ok
-test_numeric_fallback_representations (test_toolkit.MappingTests.test_numeric_fallback_representations) ... ok
 test_output_mutations_cannot_bypass_approval (test_toolkit.MappingTests.test_output_mutations_cannot_bypass_approval) ... ok
 test_preamble_once_for_repeated_mapping_of_same_child (test_toolkit.MappingTests.test_preamble_once_for_repeated_mapping_of_same_child) ... ok
 test_residual_cannot_coexist_with_subset (test_toolkit.MappingTests.test_residual_cannot_coexist_with_subset) ... ok
 test_review_attestation_required (test_toolkit.MappingTests.test_review_attestation_required) ... ok
+test_scores_below_five_rejected (test_toolkit.MappingTests.test_scores_below_five_rejected) ... ok
 test_source_and_catalog_hashes (test_toolkit.MappingTests.test_source_and_catalog_hashes) ... ok
 test_template_hidden_dimensions_are_reset (test_toolkit.MappingTests.test_template_hidden_dimensions_are_reset) ... ok
 test_unaccounted_and_conflicting_obligations (test_toolkit.MappingTests.test_unaccounted_and_conflicting_obligations) ... ok
@@ -50,6 +51,6 @@ test_empty_and_missing_review (test_toolkit.TranslationTests.test_empty_and_miss
 test_negative_identifier_and_number_risks (test_toolkit.TranslationTests.test_negative_identifier_and_number_risks) ... ok
 
 ----------------------------------------------------------------------
-Ran 50 tests in 13.283s
+Ran 51 tests in 22.796s
 
 OK

@@ -139,7 +139,8 @@ def adjudicate(doc, catalog, inventory, catalog_hash=None, inventory_hash=None):
             require(candidate.get('scf_id') in controls and text(candidate.get('reason')), 'Invalid search candidate')
             require(candidate.get('disposition') in ('ACCEPTED', 'REJECTED'), 'Unresolved candidate')
             if candidate['disposition'] == 'ACCEPTED':
-                score(candidate.get('score'))
+                accepted_strength = score(candidate.get('score'))
+                require(float(accepted_strength).is_integer() and accepted_strength >= 5, 'Accepted candidate strength must be a whole number from 5 to 10')
         review(item.get('review'), 'Search review ' + oid)
         search_map[oid] = item
     require(set(search_map) == set(obs), 'Every obligation needs a reviewed control/AO search')
@@ -152,7 +153,7 @@ def adjudicate(doc, catalog, inventory, catalog_hash=None, inventory_hash=None):
         allowed_rationales = {'Functional'} if rationale == 'Functional' else {'Functional', 'Semantic', 'Syntactic'}
         require(mapping.get('rationale') in allowed_rationales, 'Rationale conflicts with pinned profile')
         strength = score(mapping.get('score'))
-        require(float(strength).is_integer(), 'Project strength uses whole-number steps 1–10')
+        require(float(strength).is_integer() and strength >= 5, 'Accepted mapping strength must be a whole number from 5 to 10')
         require(text(mapping.get('shared_mandatory_clause')) and text(mapping.get('decision_reason')), 'Shared mandatory outcome and reason required')
         require(all(isinstance(mapping.get(k), str) for k in ('fde_only_clauses', 'scf_only_clauses')), 'Both set-difference fields must be explicit')
         rel = mapping['relationship']
@@ -170,7 +171,7 @@ def adjudicate(doc, catalog, inventory, catalog_hash=None, inventory_hash=None):
         review(mapping.get('semantic_review'), 'Semantic ' + oid + '/' + sid)
         review(mapping.get('score_review'), 'Score ' + oid + '/' + sid)
         selection = mapping.get('selection_review', {})
-        require(selection.get('scope') in ('domain_specific', 'general_governance', 'generic_fallback') and text(selection.get('decision')), 'Selection scope/decision required')
+        require(selection.get('scope') in ('domain_specific', 'general_governance') and text(selection.get('decision')), 'Selection scope/decision required')
         evidence = selection.get('selected_evidence')
         require(isinstance(evidence, list) and evidence, 'Exact control/AO evidence required')
         ao_map = {a['id']: a for a in controls[sid]['assessment_objectives']}
@@ -182,18 +183,16 @@ def adjudicate(doc, catalog, inventory, catalog_hash=None, inventory_hash=None):
                 require(proof['quote'] in controls[sid]['description'], 'Control evidence absent from original description')
         alternatives = selection.get('alternatives')
         require(isinstance(alternatives, list), 'Alternatives list required')
-        broad = sid.startswith(('GOV-', 'HRS-')) or selection['scope'] in ('general_governance', 'generic_fallback')
-        require(bool(alternatives) or not (broad or strength < 5), 'Broad/fallback mapping needs competing-control comparison')
+        broad = sid.startswith(('GOV-', 'HRS-')) or selection['scope'] == 'general_governance'
+        require(bool(alternatives) or not (broad), 'Broad mapping needs competing-control comparison')
         for alternate in alternatives:
             require(alternate.get('scf_id') in controls and alternate['scf_id'] != sid and text(alternate.get('reason')), 'Invalid competing control')
-        require(not (selection['scope'] == 'generic_fallback' and strength >= 5), 'Generic fallback cannot receive a priority score')
         accepted = {c['scf_id']: c for c in search_map[oid]['candidates'] if c['disposition'] == 'ACCEPTED'}
         require(sid in accepted and score(accepted[sid].get('score')) == strength, 'Mapping differs from reviewed candidate decision')
         mapped[oid].append(mapping)
         scores[oid].append(strength)
     unique(pairs, '(obligation, control) mappings')
     for oid, strengths in scores.items():
-        require(not (any(s < 5 for s in strengths) and any(s >= 5 for s in strengths)), 'Weak fallback coexists with priority mapping')
         accepted_ids = {c['scf_id'] for c in search_map[oid]['candidates'] if c['disposition'] == 'ACCEPTED'}
         require(accepted_ids == {m['scf_id'] for m in mapped[oid]}, 'Accepted candidates omitted from ledger')
     gap_map = {}

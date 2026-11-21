@@ -26,7 +26,7 @@ python skills/scf-mapping-translation/scripts/run.py shortlist --catalog local-d
 
 BM25 includes AO text. The Persian bridge is a small retrieval aid, not a general translator or morphological analyzer. Empty/weak results require broader queries and manual domain/AO review. Never convert retrieval_score into relationship strength or accept only the top candidate without comparison.
 
-For each obligation, record the actual search scope and candidate decisions. Retain exact selected AO/control quotations, alternatives, containment/difference evidence, strength reasoning and review attestations. Pinned profile vocabulary prevents silent Equal/Equal To or rationale conversion. Whole-number strengths 5–10 are preferred; genuine 1–4 fallback requires reviewed alternatives. No-match retains the obligation with blank SCF/score fields.
+For each obligation, record the actual search scope and candidate decisions. Retain exact selected AO/control quotations, alternatives, containment/difference evidence, strength reasoning and review attestations. Pinned profile vocabulary prevents silent Equal/Equal To or rationale conversion. Only whole-number strengths 5–10 inclusive qualify; 1–4 are rejected even as fallback. If none qualify, record No Relationship with blank SCF/score fields and a reviewed reason.
 
 Each mapped obligation also needs combined coverage reasoning and an explicit residual-clause list, even if empty. These are recorded review results, not an automated set-union proof. Pending decisions block release. See [the complete data contract](../skills/scf-mapping-translation/references/data-contract.md).
 

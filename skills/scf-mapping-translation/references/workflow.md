@@ -10,7 +10,7 @@ Each independent obligation has an original parent ID and a globally unique chil
 
 Search control descriptions and AOs in multiple relevant domains. Selected AO quotes must belong to the source-column association of the chosen control and match its exact text. An ID-prefix mismatch in the source is reported, preserved and not repaired by inference. Record alternatives for broad or fallback choices. Rank, SCF control weighting and relationship strength are different quantities.
 
-Project defaults retain scores 5–10 preferentially, 1–4 as documented fallback and blank strength for no-match rows. Scores are whole-number steps; 4, 4.0 and "4.0" are numerically equivalent. Booleans, nonfinite values and fractions are rejected. These are project acceptance rules, not claims that NIST mandates these thresholds.
+Project acceptance is whole-number strength 5–10 inclusive. Scores 1–4 are rejected, never fallback. If no candidate qualifies, record No Relationship with a reviewed reason and blank strength. Numeric representations 5, 5.0 and "5.0" are equivalent. Booleans, nonfinite values and fractions are rejected. This is a project rule, not a claimed NIST threshold.
 
 The profile pins equality spelling and rationale. Use Functional for the SCF-community profile; a separately documented multi_basis profile permits Functional, Semantic and Syntactic. Neither the validator nor exporter changes an explicit rationale. Equal/Equal To spelling differences must be resolved by selecting the intended source/template profile.
 

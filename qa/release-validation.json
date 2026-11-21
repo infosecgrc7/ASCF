@@ -7,8 +7,8 @@
     "openpyxl": "3.1.5"
   },
   "unit_tests": {
-    "count": 50,
-    "passed": 50,
+    "count": 51,
+    "passed": 51,
     "failed": 0,
     "log": "qa/unit-tests.txt"
   },
@@ -74,5 +74,12 @@
     "Review attestations not cryptographically authenticated",
     "No automatic LLM translation, OCR, inverse/transitive mapping or legacy-ID migration",
     "Default mapping export retains original SCF English; bilingual translations are separate reviewed units"
-  ]
+  ],
+  "acceptance_policy": {
+    "minimum_strength": 5,
+    "maximum_strength": 10,
+    "inclusive": true,
+    "weak_fallback_allowed": false,
+    "no_qualifying_candidate": "No Relationship"
+  }
 }

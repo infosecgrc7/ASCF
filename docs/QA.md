@@ -24,7 +24,7 @@ Detailed machine evidence is in [release-validation.json](../qa/release-validati
 
 Canonical output must agree with approved relationship, rationale, score and original SCF fields. Invalid labels/IDs, missing/extra output columns, invented source fragments, wrong-owner or fabricated AO quotes, unresolved reviews, missing inherited context, contradictory no-match/coverage dispositions, duplicate pairs and source/version drift are rejected.
 
-Numeric fallback representations 4, 4.0 and "4.0" are equivalent. Booleans, nonfinite values, out-of-range values and fractional strength steps are rejected. A repeated mapping for the same child does not duplicate the parent preamble. Multiple documents may reuse the same legal clause number without a collision.
+Threshold regressions reject 1–4 including 4, 4.0 and "4.0", and accept 5, 5.0, "5.0" and 10. Booleans, nonfinite values, out-of-range values and fractions are rejected. Multiple documents may reuse a clause number without collision; repeated child mappings do not duplicate the parent preamble.
 
 Terminology tests exercise true-only inclusion, AFTA-primary/alias priority, ambiguity retention, original-file preservation, source fingerprint drift, complete-heading lookup and exclusion of held records from translation decisions. Translation heuristics test missing review, empty input, identifiers, numbers and negation. A supplementary book definition is never rewritten as an approved AFTA entry.
 

@@ -98,13 +98,24 @@ class MappingTests(unittest.TestCase):
     def test_review_attestation_required(self):
         self.doc['mappings'][0]['semantic_review']['status'] = 'PENDING'
         self.assertBlocked()
-    def test_numeric_fallback_representations(self):
-        for value in (4, 4.0, '4.0'):
-            doc = copy.deepcopy(self.doc)
-            doc['mappings'][0]['score'] = value
-            doc['mappings'][0]['selection_review']['scope'] = 'generic_fallback'
-            doc['search_reviews'][0]['candidates'][0]['score'] = value
-            self.assertEqual(self.check(doc)[0]['status'], 'READY_FOR_EXPORT')
+    def test_scores_below_five_rejected(self):
+        for value in (1, 2, 3, 4, 4.0, '4.0'):
+            for scope in ('domain_specific', 'generic_fallback'):
+                with self.subTest(value=value, scope=scope):
+                    doc = copy.deepcopy(self.doc)
+                    doc['mappings'][0]['score'] = value
+                    doc['mappings'][0]['selection_review']['scope'] = scope
+                    doc['search_reviews'][0]['candidates'][0]['score'] = value
+                    self.assertBlocked(doc)
+
+    def test_five_is_inclusive_and_ten_is_accepted(self):
+        for value in (5, 5.0, '5.0', 10):
+            with self.subTest(value=value):
+                doc = copy.deepcopy(self.doc)
+                doc['mappings'][0]['score'] = value
+                doc['search_reviews'][0]['candidates'][0]['score'] = value
+                self.assertEqual(self.check(doc)[0]['status'], 'READY_FOR_EXPORT')
+
     def test_invalid_strengths(self):
         for value in (True, False, None, 0, 11, float('nan'), float('inf'), 'NaN', 4.5):
             with self.subTest(value=value):
