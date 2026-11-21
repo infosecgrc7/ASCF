@@ -16,6 +16,27 @@ This release brings the earlier mapping protocol, AO-aware candidate retrieval a
 - Validates source/decision consistency and creates exactly one ten-column STRM Mapping worksheet. Reopens the saved XLSX and compares every value against canonical output.
 - Supports Persian translation with AFTA-first terminology and a strictly filtered supplementary reference: 759 usable records; 43 held records excluded. It does not perform string-replacement translation.
 
+## Translation sources
+
+- **Approved AFTA glossary** (`AFTA_Approved_Glossary_Final.json`): highest terminology authority when term and sense match the sentence; preserve the approved Persian equivalent verbatim.
+- **Supplementary cybersecurity glossary**: `Cybersecurity_Glossary_FA.json` and accompanying Markdown, supplied as `Cybersecurity_Glossary_FA(1).md`. Only `use_in_skill=true` is eligible: **759 usable entries; 43 held entries excluded**. Markdown supports audit/reconciliation, never a filter bypass. Retain entry ID, source pages and extraction evidence. Quoted definitions are historical references, not current security advice.
+- **Explicitly reviewed organizational/contextual proposals** for gaps or ambiguity. Document any AFTA sense mismatch before using a lower authority. Unresolved ambiguity is NEEDS_CONTEXT.
+
+Original SCF English control descriptions and assessment objectives (AOs) anchor translation fidelity. Preserve modality, negation, conditions, scope, timing, quantities and identifiers. Lookup does not establish sentence meaning; do not translate by string replacement. This package is not an automatic API translator. Real references are local imports, excluded from this public repository; see [setup](docs/SETUP.md).
+
+## Mapping and scoring rules
+
+- **Authority:** original requirements and a pinned SCF edition with source metadata/hashes. Translations or prior mappings cannot replace source evidence. Each document has a distinct source_id.
+- **Unit:** an independently testable obligation retaining actor, action, scope, timing and inherited qualifiers. Separate duties that can pass or fail independently.
+- **Candidates:** inspect control descriptions, their associated AOs and alternatives. BM25 rank and SCF weighting are not relationship strength.
+- **Direction:** source obligation → SCF. Equal / Equal To means equal scope; Subset Of means source scope is contained in SCF; Superset Of means source scope contains SCF; Intersects With requires mandatory shared content and differences on both sides. Topic similarity or implementation support alone is insufficient. Pin relationship spelling and rationale profile.
+- **Current scoring behavior:** integer strength 1–10; prefer 5–10. The current validator also permits documented 1–4 fallback after searching and finding no stronger accepted mapping. This differs from a strict “5 and above only” policy: under that policy, sub-5 cases must remain unmapped and cannot be accepted as fallback. Thresholds are project rules, not a claimed NIST mandate.
+- **Evidence/review:** record exact control/AO quotations, reasons, scope differences, rejected alternatives and residual gaps. For equality/subset, test whether SCF could pass while a material source duty fails. Label human versus model review honestly.
+- **No match:** No Relationship with a reviewed reason and blank strength. Never invent pairs to inflate coverage. Account for combined coverage and every obligation; unresolved candidates block export.
+- **Output:** one STRM Mapping worksheet with ten fixed columns and canonical catalog text. Reopen and reconcile saved values. Structural validation is not semantic certification or organizational compliance.
+
+See [methodology](skills/scf-mapping-translation/references/workflow.md) and [data contract](skills/scf-mapping-translation/references/data-contract.md).
+
 ## Quick start
 
 Python 3.11 or newer is required. From an extracted repository:
