@@ -1,5 +1,7 @@
 # GitHub publishing guide
 
+[راهنمای فارسی](PUBLISHING.fa.md)
+
 The delivery is prepared locally. No repository creation, push or remote release is performed by the packaging scripts.
 
 ## Repository metadata

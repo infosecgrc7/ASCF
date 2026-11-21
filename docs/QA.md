@@ -1,12 +1,14 @@
 # Release verification — 1.0.0
 
+[راهنمای فارسی](QA.fa.md)
+
 Date: 2026-11-21. Measured local environment: Windows, Python 3.11, openpyxl 3.1.5.
 
 ## Results
 
 | Check | Observed result |
 | --- | --- |
-| Regression suite | 50 tests passed; no failures |
+| Regression suite | 51 tests passed; no failures |
 | Python source parse | 15 project Python files parsed successfully |
 | Skill frontmatter | Bundled skill-creator validator passed |
 | Real SCF import | All 1,534 control names/descriptions and 5,956 AO IDs/text compared with the fingerprinted prior JSONL; all matched |
@@ -34,7 +36,7 @@ Excel tests reopen the actual file, detect changed cells, hidden rows/columns, u
 
 A synthetic workbook preview was generated and inspected with the bundled spreadsheet renderer, and its imported values were inspected. The renderer process exited abnormally after producing the preview. This was not the toolkit's export engine. Native Excel rendering, Persian bidirectional layout and print fidelity have not been manually certified. Source values, RTL settings and saved workbook structures were checked; long cells may need row expansion in Excel.
 
-CI is configured for Windows/Ubuntu with Python 3.11/3.13. Those remote runs have not happened yet. Do not display a passing CI badge or claim cross-platform execution until the destination repository workflow actually succeeds.
+The [threshold-fix CI run](https://github.com/infosecgrc7/ASCF/actions/runs/44900846165) passed on Windows/Ubuntu with Python 3.11/3.13. See Actions for subsequent changes.
 
 No full source-PDF transcription review, independent real regulatory mapping certification or quantitative semantic-accuracy benchmark was performed. Approval fields are honest review attestations, not authenticated proof of a review. The code validates the supplied inventory/catalog and cannot prove that the inventory itself correctly transcribes the original legal document.
 

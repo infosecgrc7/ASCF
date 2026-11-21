@@ -37,8 +37,8 @@
       "sha256": "9f775f77c29f3cba5f225f98c23fa910dcdfbaa9769ccfadb82145b2662f9607"
     },
     "README.fa.md": {
-      "bytes": 9871,
-      "sha256": "66c7888aa8b60fdbdffe457cf527bbc4a36ee6326d45fb77ac6c93ead690c41b"
+      "bytes": 9880,
+      "sha256": "213866fba5e27c618ceaeb139f4de9a0f7cfb05a50f3ab0b68842451e286dd1e"
     },
     "README.md": {
       "bytes": 8630,
@@ -56,21 +56,33 @@
       "bytes": 2617,
       "sha256": "4fc8549b390db35ab5a7956fe53dd24638456c97f73aeb77c6dad7779b3f838f"
     },
+    "docs/PUBLISHING.fa.md": {
+      "bytes": 5482,
+      "sha256": "f315bf748551fecadd4d6e5ff863b6cbf17057f7f5225aaff1d3466fbaaf5b1f"
+    },
     "docs/PUBLISHING.md": {
-      "bytes": 3258,
-      "sha256": "9214cb036f7cc1227fef4553aa70dc71798290f1b996c681c67124fb5153a635"
+      "bytes": 3305,
+      "sha256": "5d88c8b8dcf741a1b2a4e8cb81de8787805d4b18cb193e4db14e2fdb7efc8f40"
+    },
+    "docs/QA.fa.md": {
+      "bytes": 7100,
+      "sha256": "17ce44b2552292c5cd9628320ed6ca0912fb7c7db7cf03d9e04d9ec849b14859"
     },
     "docs/QA.md": {
-      "bytes": 4786,
-      "sha256": "85495c452317c6b33ef7ed5e94d7a27fc07075c98c58f47ac5ace75a0dbd9169"
+      "bytes": 4769,
+      "sha256": "9e347929501b2d495bccbef5fa366551d2efc88ec00ee35c264b719e67e16aac"
     },
     "docs/SETUP.md": {
       "bytes": 3254,
       "sha256": "c6efd80639988920459ae07d1fb5b85aca8fcb8b246501a6fa22dac1a2479fcb"
     },
+    "docs/USAGE.fa.md": {
+      "bytes": 9452,
+      "sha256": "20c3f885d270bfa4aa70adef0d4f9cd0f7238c0a4bf48f18b723f68a04d9dfd3"
+    },
     "docs/USAGE.md": {
-      "bytes": 6672,
-      "sha256": "3d2e98a1e586e117ccb72d6a6ee2c7a524497ee71780d4d616a51962e98be3b2"
+      "bytes": 6714,
+      "sha256": "5e93522da20217d4b1e8a0d558156521a384ca5afba67d27595786b4bf01cb22"
     },
     "docs/assets/ascf-methodology.png": {
       "bytes": 1691884,

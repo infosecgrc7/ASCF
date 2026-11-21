@@ -1,5 +1,7 @@
 # Usage
 
+[راهنمای فارسی](USAGE.fa.md)
+
 Run commands from the repository root or use the installed scf-toolkit command with the same arguments.
 
 ## 1. Verify the included example
